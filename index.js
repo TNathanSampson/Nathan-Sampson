@@ -60,7 +60,7 @@ wage = 20;
 satisfied = true;
 // use "console.log()" and "+" to print a sentence that includes two variables
 console.log(`My name is ${name}, and my favorite song is "${favoriteSong}".`);
-*/
+
 
 const me = {
   pets: {
@@ -86,3 +86,21 @@ let keyFinder = "pets";
 console.log(someone);
 console.log(me["name"]);
 console.log(me[keyFinder].dog);
+*/
+
+const x = 3;
+const y = 3;
+const z = true;
+
+console.log((x === y) === z);
+
+const guy = {
+  name: "Nathan";
+}
+const otherGuy = {
+  name: "Nathan";
+}
+
+console.log(guy === otherGuy);
+
+//Primitives are Pass by (meaning compare by) Value, Objects are Pass by "reference", meaning by their location in memory (pointer)
