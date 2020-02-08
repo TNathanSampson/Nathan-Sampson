@@ -81,6 +81,8 @@ const someone = {
 someone.name = "jim";
 someone.age = 24;
 
+let keyFinder = "pets";
+
 console.log(someone);
-console.log(me.name);
-console.log(me.pets.dog);
+console.log(me["name"]);
+console.log(me[keyFinder].dog);
