@@ -17,7 +17,7 @@ console.log("My name is " + myName + ".");
 console.log(
   `My name is ${myName}, I have ${numOfYears} years experience with JavaScript.`
 );
-*/
+
 
 // const x = 3;
 // const y = true;
@@ -60,3 +60,27 @@ wage = 20;
 satisfied = true;
 // use "console.log()" and "+" to print a sentence that includes two variables
 console.log(`My name is ${name}, and my favorite song is "${favoriteSong}".`);
+*/
+
+const me = {
+  pets: {
+    dog: "Arya",
+    cat: "Jessie"
+  }
+};
+
+me.name = "Nathan";
+me.age = 35;
+
+console.log(me);
+
+const someone = {
+  name: "dhanav"
+};
+
+someone.name = "jim";
+someone.age = 24;
+
+console.log(someone);
+console.log(me.name);
+console.log(me.pets.dog);
