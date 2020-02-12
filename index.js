@@ -86,7 +86,7 @@ let keyFinder = "pets";
 console.log(someone);
 console.log(me["name"]);
 console.log(me[keyFinder].dog);
-*/
+
 
 const x = 3;
 const y = 3;
@@ -104,3 +104,26 @@ const otherGuy = {
 console.log(guy === otherGuy);
 
 //Primitives are Pass by (meaning compare by) Value, Objects are Pass by "reference", meaning by their location in memory (pointer)
+*/
+const myArray = [1, 2, 3];
+console.log(myArray);
+// access the 1st item in the Array
+console.log(myArray[0]);
+// access the last item in the Array
+console.log(myArray[2]);
+// print the length of the Array
+console.log("length: ", myArray.length);
+// use the length property to access the last item in the Array
+console.log(myArray[myArray.length - 1]);
+// with for...of, loop over the Array, modify the value and add to a different Array
+console.log("For Loop Question: ");
+
+for (const item of myArray) {
+  console.log(item + 10);
+}
+const myArr2 = [];
+
+for (const item of myArray) {
+  myArr2.push(item + 3);
+}
+console.log(myArr2);
