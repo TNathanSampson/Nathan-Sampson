@@ -18,7 +18,6 @@ console.log(
   `My name is ${myName}, I have ${numOfYears} years experience with JavaScript.`
 );
 
-
 // const x = 3;
 // const y = true;
 // console.log(x);
@@ -61,7 +60,6 @@ satisfied = true;
 // use "console.log()" and "+" to print a sentence that includes two variables
 console.log(`My name is ${name}, and my favorite song is "${favoriteSong}".`);
 
-
 const me = {
   pets: {
     dog: "Arya",
@@ -87,7 +85,6 @@ console.log(someone);
 console.log(me["name"]);
 console.log(me[keyFinder].dog);
 
-
 const x = 3;
 const y = 3;
 const z = true;
@@ -100,11 +97,8 @@ const guy = {
 const otherGuy = {
   name: "Nathan";
 }
-
 console.log(guy === otherGuy);
-
 //Primitives are Pass by (meaning compare by) Value, Objects are Pass by "reference", meaning by their location in memory (pointer)
-*/
 const myArray = [1, 2, 3];
 console.log(myArray);
 // access the 1st item in the Array
@@ -127,3 +121,9 @@ for (const item of myArray) {
   myArr2.push(item + 3);
 }
 console.log(myArr2);
+*/
+let kitten = "Fuzzy";
+const cat = x => {
+  console.log(kitten);
+};
+cat();
