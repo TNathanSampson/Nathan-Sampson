@@ -121,9 +121,143 @@ for (const item of myArray) {
   myArr2.push(item + 3);
 }
 console.log(myArr2);
-*/
+// 2-11-2020
 let kitten = "Fuzzy";
 const cat = x => {
   console.log(kitten);
 };
 cat();
+*/
+
+//2-12-2020
+// // TODO: using the function expressions below, refactor them into function declarations
+// function greet () {
+//   console.log("Hello!");
+// }
+
+// function threeModTwo () {
+//   console.log(3 % 2);
+// }
+
+// let age = 18;
+// function checkDrivingAge () {
+//   if (age >= 16) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+
+// greet();
+// threeModTwo();
+// checkDrivingAge(age);
+// greet;
+
+// print the function below
+// function myNumberFunction() {
+//   let num = 2 ** 2;
+//   num = num + 3;
+//   num = num % 4;
+//   num = num * 14;
+//   console.log(num);
+// }
+
+// // now, invoke the myNumberFunction function
+// myNumberFunction();
+
+// // print just the function of console.log (no invocation)
+// console.log(myNumberFunction);
+
+// // ? what does the function below return?
+// function myNumberFunction() {
+//   let num = 2 ** 2;
+//   num = num + 3;
+//   num = num % 4;
+//   num = num * 14;
+//   return num;
+// }
+
+// change the function above to return a value
+
+// // Short Circuiting
+// // ! the console.log will not print
+// function shortCircuitFunction() {
+//   return "Zap! - Short Circuited!";
+//   console.log(
+//     "This will never print because it is after the return statement."
+//   );
+// }
+
+// // ? will the following function short circuit?
+// let height = 50;
+// function checkCircusRides() {
+//   if (height < 48) {
+//     return "Take a ride on the carousel!";
+//   }
+//   if (height < 60) {
+//     return "Try the bumper cars!";
+//   }
+//   return "Enjoy the roller coaster!";
+// }
+// console.log(checkCircusRides(height));
+// // change the function above to use short circuiting
+// let x = "Dogs";
+// function funky(x, y = 2, ...args) {
+//   console.log(x);
+//   console.log(y);
+//   console.log(args);
+//   return x + y;
+// }
+// // print each named parameter,
+// // then return the parameters added together
+
+// // invoke the function and pass in two numbers
+// funky(1, 2, 3, 4, 5, 6, 7);
+// console.log(x);
+
+// wrap the code below in a function called "addNumbersFrom1To100" and return the total
+// ! do not use console.log inside your function
+
+// function getTotal() {
+//   let total = 0;
+//   for (let i = 1; i <= 100; i++) {
+//     total += i;
+//   }
+//   return total;
+// }
+// // // invoke the function and console.log its value
+// console.log(getTotal());
+
+// // try to print the variable "total"
+// // ? what do you expect ?
+
+// // examine the code below,
+// // // ? which console.log statement will not print when you invoke the parentAndChildScope function ?
+// function childScope(param) {
+//   const childVariable = "I am in the child's scope";
+//   console.log("Child Scope, Parent Variable:", param);
+//   console.log("Child Scope, Child Variable:", childVariable);
+// }
+
+// function parentAndChildScope() {
+//   const parentVariable = "I am in the parent's scope";
+//   childScope(parentVariable);
+//   console.log("Parent Scope, Parent Variable:", parentVariable);
+//   console.log("Parent Scope, Child Variable:", childVariable);
+// }
+// parentAndChildScope();
+
+// refactor this messy looking function into pure functions
+function rentCar(name, age, car) {
+  if (age >= 25) {
+    console.log(
+      `Thank you for your reservation ${name}. We have a ${car} available for you, and it is quite affordable.`
+    );
+  } else if (age >= 18) {
+    console.log(
+      `Thank you for your reservation ${name}. We have a ${car} available for you, but it is quite expensive.`
+    );
+  } else {
+    console.log(`Sorry, ${name}. You are not old enough to rent a car.`);
+  }
+}
