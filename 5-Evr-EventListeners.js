@@ -7,7 +7,7 @@ document
 
 document.querySelector(".class-week")
         .addEventListener("focus",
-            (event) => {event.target.style.background-color = "yellow");}
+            (event) => {event.target.style.backgroundColor = "yellow");}
 // add an event listener to the whole page that listens for a "keydown" event and prints the key that was pressed
 document
   .querySelector("body")
